@@ -17,8 +17,8 @@ if ! [ -x "$(command -v jq)" ]; then
   exit 1
 fi
 
-NSURL=https://josiahglucose.herokuapp.com # Add your own Nightscout URL here
-USEMMOL=false # true if you use mmol/l units. false if you use mg/dl
+NSURL=https://josiahglucose.herokuapp.com
+USEMMOL=false
 
 JSONOUT=$(curl --silent $NSURL/api/v1/entries/current.json)
 
